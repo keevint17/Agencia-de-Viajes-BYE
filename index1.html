@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BYE Agencia de Viajes</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">
+      <img src="byelogo.jpg" alt="BYE Agencia de Viajes" />
+      <h2>Agencia de Viajes</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Explora el mundo con <span>BYE</span></h1>
+    <p>12 destinos increíbles para tus vacaciones inolvidables.</p>
+    <a href="#destinos" class="btn">Descubre Destinos</a>
+  </section>
+
+  <!-- Destinos -->
+  <section id="destinos">
+    <h2>✈ Nuestros Destinos</h2>
+    <div class="grid">
+      <div class="card" data-destino="Argentina" data-img="argentina.jpg">Argentina</div>
+      <div class="card" data-destino="Brasil" data-img="brasil.jpeg">Brasil</div>
+      <div class="card" data-destino="Colombia" data-img="colombia.png">Colombia</div>
+      <div class="card" data-destino="Ecuador" data-img="ecuador2.jpg">Ecuador</div>
+      <div class="card" data-destino="Dubái" data-img="dubai.jpg">Dubái</div>
+      <div class="card" data-destino="Estados Unidos" data-img="usa.jpg">Estados Unidos</div>
+      <div class="card" data-destino="Francia" data-img="francia.jpg">Francia</div>
+      <div class="card" data-destino="Japón" data-img="japon.jpg">Japón</div>
+      <div class="card" data-destino="Corea" data-img="Korea.png">Corea</div>
+      <div class="card" data-destino="México" data-img="mexico.jpg">México</div>
+      <div class="card" data-destino="República Dominicana" data-img="rd.png">República Dominicana</div>
+      <div class="card" data-destino="Turquía" data-img="turquia.png">Turquía</div>
+    </div>
+  </section>
+
+  <!-- Sobre nosotros -->
+  <section id="nosotros">
+    <h2>Quiénes Somos</h2>
+    <p>En <strong>BYE</strong> —Beyond Your Experience— nos dedicamos a ofrecer experiencias viajeras diseñadas con atención, pasión y autenticidad.</p>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form id="contacto-form">
+      <input type="text" placeholder="Tu Nombre" required>
+      <input type="email" placeholder="Tu Email" required>
+      <textarea placeholder="Tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 BYE Agencia de Viajes | Síguenos en redes sociales</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-img" src="" alt="Destino" />
+      <p id="modal-info"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
