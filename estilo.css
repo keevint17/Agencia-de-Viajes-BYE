@@ -129,7 +129,19 @@ section { padding: 40px 20px; }
   background: transparent; border: 0; line-height: 1; padding: 6px;
 }
 @keyframes zoomIn { from { transform: scale(0.96); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+#destinos {
+    background:#C1D0C9;
+}
+/*seccion de nosotros*/
+#nosotros {
+  background: #55756F; 
+  color: #0f172a; 
+}
 
+#contacto {
+  background: #0e243b; 
+  color: #fff; 
+}
 /* FORMULARIO */
 
 #contacto-form { 
@@ -144,7 +156,7 @@ section { padding: 40px 20px; }
   padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px; outline: none;
 }
 #contacto-form input:focus, #contacto-form textarea:focus { border-color: #2196F3; box-shadow: 0 0 0 3px rgba(33,150,243,0.15); }
-#contacto-form button { padding: 10px; background: #2196F3; color: #fff; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; }
+#contacto-form button { padding: 10px; background: #0b4a6f; color: #fff; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; }
 #contacto-form button:disabled { opacity: 0.7; cursor: not-allowed; }
 .form-status { min-height: 1.2em; font-size: 0.95rem; }
 .form-status.success { color: #2e7d32; }
