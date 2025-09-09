@@ -129,17 +129,15 @@ section { padding: 40px 20px; }
   background: transparent; border: 0; line-height: 1; padding: 6px;
 }
 @keyframes zoomIn { from { transform: scale(0.96); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-#destinos {
-    background:#C1D0C9;
-}
+
 /*seccion de nosotros*/
 #nosotros {
-  background: #55756F; 
+  background: #C1D0C9; 
   color: #0f172a; 
 }
 
 #contacto {
-  background: #0e243b; 
+  background: #55756F; 
   color: #fff; 
 }
 /* FORMULARIO */
