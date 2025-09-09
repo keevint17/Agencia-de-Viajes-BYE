@@ -117,6 +117,7 @@ section { padding: 40px 20px; }
   width: 90%;
   max-width: 600px;
   border-radius: 8px;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   position: relative;
   animation: zoomIn 0.25s ease;
@@ -130,7 +131,13 @@ section { padding: 40px 20px; }
 @keyframes zoomIn { from { transform: scale(0.96); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 
 /* FORMULARIO */
-#contacto-form { display: flex; flex-direction: column; gap: 14px; max-width: 420px; margin: 0 auto; }
+
+#contacto-form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 14px; 
+  max-width: 420px; 
+  margin: 0 auto; }
 .field { display: flex; flex-direction: column; gap: 6px; text-align: left; }
 .field label { font-size: 0.95rem; font-weight: 600; }
 #contacto-form input, #contacto-form textarea {
