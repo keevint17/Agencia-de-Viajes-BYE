@@ -1,4 +1,4 @@
-// --- Selección de elementos ---
+
 const cards = document.querySelectorAll('.card');
 const modal = document.getElementById('modal');
 const modalTitle = document.getElementById('modal-title');
@@ -10,7 +10,7 @@ const body = document.body;
 let lastFocused = null;
 let keydownHandler = null;
 
-// --- Utilidades ---
+
 function setCardBackgrounds() {
   cards.forEach((card) => {
     const img = card.dataset.img;
@@ -46,7 +46,7 @@ function trapFocusWithinModal() {
 
   document.addEventListener('keydown', keydownHandler);
 
-  // Enfocar el botón de cierre (o el primero disponible)
+  
   (closeBtn || first)?.focus();
 }
 
@@ -88,12 +88,12 @@ function closeModal() {
   }
 }
 
-// --- Eventos de tarjetas ---
+
 cards.forEach((card) => {
-  // Click abre modal
+  
   card.addEventListener('click', () => openModalFromCard(card));
 
-  // Accesibilidad: Enter o Space también abren
+  
   card.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
@@ -102,20 +102,20 @@ cards.forEach((card) => {
   });
 });
 
-// --- Eventos del modal ---
+
 if (closeBtn) closeBtn.addEventListener('click', closeModal);
 
 if (modal) {
-  // Cerrar al hacer clic fuera del contenido
+  
   modal.addEventListener('click', (e) => {
     if (e.target === modal) closeModal();
   });
 }
 
-// --- Inicialización ---
+
 setCardBackgrounds();
 
-// --- Formulario ---
+
 const form = document.getElementById('contacto-form');
 const statusEl = document.getElementById('form-status');
 
@@ -123,7 +123,7 @@ if (form) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Limpia estado previo
+    
     if (statusEl) {
       statusEl.textContent = '';
       statusEl.className = 'form-status';
@@ -150,7 +150,7 @@ if (form) {
         statusEl.textContent = 'Enviando...';
       }
 
-      // Simula envío asincrónico
+      
       await new Promise((resolve) => setTimeout(resolve, 800));
 
       if (statusEl) {

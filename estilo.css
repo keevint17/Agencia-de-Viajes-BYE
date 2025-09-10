@@ -1,12 +1,12 @@
-/* RESET */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
 
-/* UTILS */
+
 body.modal-open { overflow: hidden; }
 
-/* HEADER */
+
 header {
   background:linear-gradient(90deg,#0f172a,#0b4a6f);
   color: #fff;
@@ -18,7 +18,7 @@ header {
 header .logo {
   display: flex;
   align-items: center;
-  gap: 20px; /* Espacio entre imagen y texto */
+  gap: 20px; 
 }
 header .logo h2 {    font-size: 1.4rem;
   font-weight: bold;
@@ -28,7 +28,7 @@ header nav ul { list-style: none; display: flex; gap: 20px; }
 header nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
 
 
-/* HERO */
+
 .hero {
   background: url('hero.png') center/cover no-repeat;
   min-height: 60vh;
@@ -53,10 +53,10 @@ header nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
   display: inline-block;
 }
 
-/* SECCIONES */
+
 section { padding: 40px 20px; }
 
-/* DESTINOS */
+
 #destinos { text-align: center; }
 .grid {
   display: grid;
@@ -97,7 +97,7 @@ section { padding: 40px 20px; }
 .card:hover { transform: translateY(-6px); box-shadow: 0 10px 22px rgba(0,0,0,0.25); }
 .card:hover::after { background: rgba(0,0,0,0.2); }
 
-/* MODAL */
+
 .modal {
   display: none;
   position: fixed;
@@ -130,7 +130,7 @@ section { padding: 40px 20px; }
 }
 @keyframes zoomIn { from { transform: scale(0.96); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 
-/*seccion de nosotros*/
+
 #nosotros {
   background: #C1D0C9; 
   color: #0f172a; 
@@ -140,7 +140,7 @@ section { padding: 40px 20px; }
   background: #55756F; 
   color: #fff; 
 }
-/* FORMULARIO */
+
 
 #contacto-form { 
   display: flex; 
@@ -160,6 +160,6 @@ section { padding: 40px 20px; }
 .form-status.success { color: #2e7d32; }
 .form-status.error { color: #c62828; }
 
-/* FOOTER */
+
 footer { text-align: center; padding: 20px; background: #f5f5f5; margin-top: 20px; }
 
